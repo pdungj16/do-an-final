@@ -1,4 +1,5 @@
 import clientPromise from "../../../../libs/mongoConnect";
+import { UserInfo } from "../../../models/UserInfo";
 import mongoose from "mongoose";
 import NextAuth from "next-auth";
 import { User } from "../../../models/User"
