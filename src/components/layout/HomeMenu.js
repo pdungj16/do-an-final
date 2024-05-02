@@ -31,7 +31,7 @@ export default function HomeMenu() {
         </div>
         <div className="grid grid-cols-3 gap-4">
         {bestSellers?.length > 0 && bestSellers.map(item => (
-          <MenuItem {...item} />
+          <MenuItem {...item} key={item._id} />
         ))}
         </div>
         </section>
