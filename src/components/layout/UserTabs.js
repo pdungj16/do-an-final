@@ -28,7 +28,7 @@ export default function UserTabs({isAdmin}) {
                 Users
                 </Link>
             <Link className={path === '/orders' ? 'active' : ''} 
-            href={'/users'}>
+            href={'/orders'}>
                 Orders
             </Link>
             </>
