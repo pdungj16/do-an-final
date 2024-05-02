@@ -1337,17 +1337,10 @@
   resolved "https://registry.npmjs.org/@types/json5/-/json5-0.0.29.tgz"
   integrity sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==
 
-"@types/node@20.12.5":
+"@types/node@20.12.5", "@types/node@>=8.1.0":
   version "20.12.5"
   resolved "https://registry.npmjs.org/@types/node/-/node-20.12.5.tgz"
   integrity sha512-BD+BjQ9LS/D8ST9p5uqBxghlN+S42iuNxjsUGjeZobe/ciXzk2qb1B6IXc6AnRLS+yFJRpN2IPEHMzwspfDJNw==
-  dependencies:
-    undici-types "~5.26.4"
-
-"@types/node@>=8.1.0":
-  version "20.12.7"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-20.12.7.tgz#04080362fa3dd6c5822061aa3124f5c152cff384"
-  integrity sha512-wq0cICSkRLVaf3UGLMGItu/PtdY7oaXaI/RVU+xliKVOtRna3PRY57ZDfztpDL0n11vfymMUnXv8QwYCO7L1wg==
   dependencies:
     undici-types "~5.26.4"
 
@@ -1716,7 +1709,7 @@ braces@^3.0.2, braces@~3.0.2:
 
 brcypt@^1.0.1:
   version "1.0.1"
-  resolved "https://registry.npmjs.org/brcypt/-/brcypt-1.0.1.tgz"
+  resolved "https://registry.yarnpkg.com/brcypt/-/brcypt-1.0.1.tgz#2fe5788f85c2624cff1c7a861b586f8dbbc7fc7e"
   integrity sha512-DjzcKFxx3g3F5PPYVNIzIpyAT15WDiJSzCeg5Fa840uI0N3E+RyRhDu5nIkSTbXydqy5F95KgnI/co2LhxCFEA==
 
 browserslist@^4.23.0:
@@ -2594,7 +2587,7 @@ globby@^11.1.0:
 
 goober@^2.1.10:
   version "2.1.14"
-  resolved "https://registry.yarnpkg.com/goober/-/goober-2.1.14.tgz#4a5c94fc34dc086a8e6035360ae1800005135acd"
+  resolved "https://registry.npmjs.org/goober/-/goober-2.1.14.tgz"
   integrity sha512-4UpC0NdGyAFqLNPnhCT2iHpza2q+RAY3GV85a/mRPdzyPQMsj0KmMMuetdIkzWRbJ+Hgau1EZztq8ImmiMGhsg==
 
 gopd@^1.0.1:
@@ -3607,7 +3600,7 @@ punycode@^2.1.0, punycode@^2.3.0:
 
 qs@^6.11.0:
   version "6.12.1"
-  resolved "https://registry.yarnpkg.com/qs/-/qs-6.12.1.tgz#39422111ca7cbdb70425541cba20c7d7b216599a"
+  resolved "https://registry.npmjs.org/qs/-/qs-6.12.1.tgz"
   integrity sha512-zWmv4RSuB9r2mYQw3zxQuHWeU+42aKi1wWig/j4ele4ygELZ7PEO6MM7rim9oAQH2A5MWfsAVf/jPvTPgCbvUQ==
   dependencies:
     side-channel "^1.0.6"
@@ -3627,12 +3620,12 @@ react-dom@^18:
 
 react-flying-item@^1.1.3:
   version "1.1.3"
-  resolved "https://registry.yarnpkg.com/react-flying-item/-/react-flying-item-1.1.3.tgz#4b8c25d5603607050ac9ea653a38aea96993a15c"
+  resolved "https://registry.npmjs.org/react-flying-item/-/react-flying-item-1.1.3.tgz"
   integrity sha512-wT69xmnmT7mvjT0H0RMdBWrEYF+pYKTEk2ssmSCPIA3RuSEyAcjUJWDkiqx+JiaHuXWC/00ZrREJpDnGc6Pk8g==
 
 react-hot-toast@^2.4.1:
   version "2.4.1"
-  resolved "https://registry.yarnpkg.com/react-hot-toast/-/react-hot-toast-2.4.1.tgz#df04295eda8a7b12c4f968e54a61c8d36f4c0994"
+  resolved "https://registry.npmjs.org/react-hot-toast/-/react-hot-toast-2.4.1.tgz"
   integrity sha512-j8z+cQbWIM5LY37pR6uZR6D4LfseplqnuAO4co4u8917hBUvXlEqyP1ZzqVLcqoyUesZZv/ImreoCeHVDpE5pQ==
   dependencies:
     goober "^2.1.10"
@@ -3972,9 +3965,9 @@ strip-json-comments@^3.1.1:
   integrity sha512-6fPc+R4ihwqP6N/aIv2f1gMH8lOVtWQHoqC4yK6oSDVVocumAsfCqjkXnqiYMhmMwS/mEHLp7Vehlt3ql6lEig==
 
 stripe@^15.1.0:
-  version "15.1.0"
-  resolved "https://registry.yarnpkg.com/stripe/-/stripe-15.1.0.tgz#641ee4143538cac862ca7253acd101887a0dff1a"
-  integrity sha512-yMsP9VWsQKkmR14E7MhtFDYKCoYCnhG/tLtiMnNiSiVisDezU2OKJ2T9myufYKl922H85nvCgaczyBLovaJTVA==
+  version "15.4.0"
+  resolved "https://registry.npmjs.org/stripe/-/stripe-15.4.0.tgz"
+  integrity sha512-o3STlHYUmJh1ogAem434As7hCMEGG43R1fFkX0NuxabnmZoOQ9Ytxuu+e5Tq5NSE3LPUIV64jbjQebHoZvLTKw==
   dependencies:
     "@types/node" ">=8.1.0"
     qs "^6.11.0"
