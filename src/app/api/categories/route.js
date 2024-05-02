@@ -1,4 +1,4 @@
-import { isAdmin } from '../auth/[...nextauth]';
+import { isAdmin } from '../auth/[...nextauth]/route';
 import { Category } from '../../models/Category';
 import mongoose from "mongoose";
 
