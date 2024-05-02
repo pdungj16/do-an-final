@@ -7,10 +7,9 @@ import bcrypt from 'bcrypt';
 import CredentialsProvider from "next-auth/providers/credentials"
 import GoogleProvider from "next-auth/providers/google";
 import { MongoDBAdapter } from "@auth/mongodb-adapter"
-import testAuth from '../lib/auth';
 
-export const authOptions = {
-  secret: process.env.SECRET,
+export const testAuth = {
+    secret: process.env.SECRET,
   adapter: MongoDBAdapter(clientPromise),
   providers: [
     GoogleProvider({
@@ -40,21 +39,21 @@ export const authOptions = {
       }
     })
   ],
-};
-
-export async function isAdmin() {
-  const session = await getServerSession(authOptions);
-  const userEmail = session?.user?.email;
-  if (!userEmail) {
-    return false;
-  }
-  const userInfo = await UserInfo.findOne({email:userEmail});
-  if (!userInfo) {
-    return false;
-  }
-  return userInfo.admin;
 }
 
-const handler = NextAuth(authOptions);
+export async function isAdmin() {
+    const session = await getServerSession(testAuth);
+    const userEmail = session?.user?.email;
+    if (!userEmail) {
+      return false;
+    }
+    const userInfo = await UserInfo.findOne({email:userEmail});
+    if (!userInfo) {
+      return false;
+    }
+    return userInfo.admin;
+  }
+  
+const handler = NextAuth(testAuth);
 
 export { handler as GET, handler as POST }
