@@ -9,6 +9,6 @@ import NextAuth, { getServerSession } from "next-auth";
 // import { MongoDBAdapter } from "@auth/mongodb-adapter";
 import { authOptions } from "../../../../libs/route";
 
-export const handler = NextAuth(authOptions);
+const handler = NextAuth(authOptions);
 
 export { handler as GET, handler as POST };
