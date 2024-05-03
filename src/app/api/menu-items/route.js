@@ -1,4 +1,4 @@
-import { isAdmin } from "../auth/route";
+import { isAdmin } from "../../../libs/route";
 import mongoose from "mongoose";
 import { MenuItem } from "../../models/MenuItem";
 
